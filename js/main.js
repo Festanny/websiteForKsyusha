@@ -1,5 +1,18 @@
 $(document).ready(function () {
 
+  var swiper = new Swiper(".slider-photo", {
+    pagination: {
+      clickable: true,
+      el: ".swiper-pagination",
+    },
+    autoplay: {
+      delay: 5000,
+      pauseOnMouseEnter: true,
+      disableOnInteraction: false
+    },
+    
+  });
+
   'use strict'
 
   var Nexus = {
