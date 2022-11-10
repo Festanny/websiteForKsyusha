@@ -10,7 +10,6 @@ $(document).ready(function () {
       pauseOnMouseEnter: true,
       disableOnInteraction: false
     },
-    
   });
 
   'use strict'
