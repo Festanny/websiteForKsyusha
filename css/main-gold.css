@@ -1123,6 +1123,11 @@ ul.infoSite {
     row-gap: 20px;
     font-size: 20px;
   }
+  #section-connection .infoMe .info-block .contactInfo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
   #section-connection .infoMe .info-block a {
     text-decoration: underline;
   }

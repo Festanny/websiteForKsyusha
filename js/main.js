@@ -34,8 +34,7 @@ $(document).ready(function () {
 
   // offset top
   $(window).scroll(function () {
-    console.log($(window).scrollTop() + $(window).height())
-    if ($(window).scrollTop() + $(window).height() >= $('#section-connection').offset().top + 300) {
+    if ($(window).scrollTop() + $(window).height() >= $('#section-connection').offset().top + 200) {
       $('.c-main-nav__item a[data-navPosition="4"]').addClass('active-link');
     }
     else {
@@ -359,12 +358,12 @@ $(document).ready(function () {
   };
 
   Nexus.initialize();
-}
 
   // On resize actions
   window.onresize = function(){
     Nexus.tabs();
     Nexus.fixedMenuScroll(true);
   }
+}
 
 });
