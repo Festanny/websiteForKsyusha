@@ -12,12 +12,30 @@ $(document).ready(function () {
     },
   });
 
+  // Просмотр изображения
+  $(function () {
+    $('.minimized').click(function (event) {
+        var i_path = $(this).attr('src');
+        $('body').append('<div id="overlay"></div><div id="magnify"><img src="' + i_path + '"><div id="close-popup"><i></i></div></div>');
+        $('#overlay, #magnify').fadeIn('fast');
+    });
+
+    $('body').on('click', '#close-popup, #overlay', function (event) {
+        event.preventDefault();
+        $('#overlay, #magnify').fadeOut('fast', function () {
+            $('#close-popup, #magnify, #overlay').remove();
+        });
+    });
+  });
+
   'use strict'
 
+  if ($('[data-menuAnimated]').length != 0) {
   var Nexus = {
 
     initialized: false,
 
+    
     mainNavAnimated: (document.querySelector('[data-menuAnimated]').dataset.menuanimated === 'true') ? true : false,
 
     isIE: function(){
@@ -329,6 +347,7 @@ $(document).ready(function () {
   };
 
   Nexus.initialize();
+}
 
   // On resize actions
   window.onresize = function(){
