@@ -733,6 +733,11 @@ ul.infoSite {
     margin-top: 0;
   }
 
+  main.otherPage {
+    min-height: 100vh;
+    margin-bottom: 50px;
+  }
+
   .otherPage .photoBlockMain .c-screen-education .info-block {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, auto));
@@ -749,7 +754,7 @@ ul.infoSite {
   .otherPage .photoBlockMain .c-screen-education .info-block img:hover{
     transform: scale(1.03);
   }
-  .otherPage .photoBlockMain .c-screen-education .video {
+  /* .otherPage .photoBlockMain .c-screen-education .video {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
@@ -758,7 +763,7 @@ ul.infoSite {
   .otherPage .photoBlockMain .c-screen-education .video video {
     width: 100%;
     border-radius: 20px;
-  }
+  } */
 
   .minimized {
     cursor: pointer;
@@ -1123,11 +1128,6 @@ ul.infoSite {
     row-gap: 20px;
     font-size: 20px;
   }
-  #section-connection .infoMe .info-block .contactInfo {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-  }
   #section-connection .infoMe .info-block a {
     text-decoration: underline;
   }
@@ -1140,11 +1140,14 @@ ul.infoSite {
     max-height: 300px;
     overflow-y: auto;
   }
-  .otherPage .photoBlockMain .c-screen-education .video {
-    
+  .otherPage .photoBlockMain .video {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
   }
   #section-research .js-toggle-modal .info-block .item a,
-  .otherPage .photoBlockMain .c-screen-education .video a {
+  .otherPage .photoBlockMain .video a {
     display: flex;
     justify-content: center;
     align-items: center;
