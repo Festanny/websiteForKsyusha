@@ -31,6 +31,18 @@ $(document).ready(function () {
   'use strict'
 
   if ($('[data-menuAnimated]').length != 0) {
+
+  // offset top
+  $(window).scroll(function () {
+    console.log($(window).scrollTop() + $(window).height())
+    if ($(window).scrollTop() + $(window).height() >= $('#section-connection').offset().top + 300) {
+      $('.c-main-nav__item a[data-navPosition="4"]').addClass('active-link');
+    }
+    else {
+      $('.c-main-nav__item a[data-navPosition="4"]').removeClass('active-link');
+    }
+  })
+
   var Nexus = {
 
     initialized: false,
