@@ -751,7 +751,7 @@ ul.infoSite {
     cursor: pointer;
     transition: all .3s;
   }
-  .otherPage .photoBlockMain .c-screen-education .info-block img:hover {
+  .otherPage .photoBlockMain .c-screen-education .info-block img:hover{
     transform: scale(1.03);
   }
 
@@ -1122,13 +1122,22 @@ ul.infoSite {
     text-decoration: underline;
   }
   #section-research .js-toggle-modal .info-block {
+    margin-top: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  .otherPage .photoBlockMain .c-screen-education .video {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  #section-research .js-toggle-modal .info-block .item a,
+  .otherPage .photoBlockMain .c-screen-education .video a {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
-  }
-  #section-research .js-toggle-modal .info-block .item a {
-    display: inline-block;
+    align-items: center;
+    height: 100%;
     padding: 10px 15px;
     border: 1px solid #d3b484;
   }
