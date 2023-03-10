@@ -738,10 +738,14 @@ ul.infoSite {
     margin-bottom: 50px;
   }
 
+  .otherPage .photoBlockMain .c-screen-education > div {
+    width: 100%;
+  }
   .otherPage .photoBlockMain .c-screen-education .info-block {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, auto));
     gap: 15px;
+    grid-auto-rows: 226px;
   }
   .otherPage .photoBlockMain .c-screen-education .info-block img {
     width: 100%;
